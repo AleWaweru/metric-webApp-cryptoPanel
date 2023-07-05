@@ -155,7 +155,7 @@ If you like this project please give it a star ⭐️
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse community for their supports.
+I would like to thank the Microverse community for their support.
 <p>I would like to thank <a href = "https://www.behance.net/sakwadesignstudio">Nelson Sakwa .</a> the author of the original design.</p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
