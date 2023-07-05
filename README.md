@@ -164,6 +164,6 @@ I would like to thank Microverse community for their supports.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](https://github.com/AleWaweru/metric-webApp-cryptoPanel/blob/project-feature-branch/MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
