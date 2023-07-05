@@ -70,7 +70,7 @@ To get a local copy up and running, follow these steps.
 In order to run this project you need:
 
 ```
- install git on local machine
+ install git on a local machine
  create a repository on local machine `my-folder`
 
 ```
