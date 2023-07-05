@@ -8,3 +8,13 @@
   font-size: 1.5rem;
   font-weight: 400;
 }
+
+@media screen and (max-width: 768px) {
+  .footer {
+    width: 100%;
+  }
+
+  .footer span {
+    font-size: 1.3rem;
+  }
+}

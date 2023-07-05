@@ -120,8 +120,6 @@ You can deploy this project using **[Render](https://render.com/)**
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
-
 
 👤 **Alex**
 
