@@ -56,7 +56,7 @@
 
 ### Live Demo <a name="live-demo"></a>
 
-[https://space-travel-594o.onrender.com]
+[https://cryptopanel.onrender.com/Cryptopanel/]
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
