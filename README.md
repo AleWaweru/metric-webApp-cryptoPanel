@@ -58,7 +58,7 @@
 
 > [Live Demo](https://cryptopanel.onrender.com/Cryptopanel/)
 
-> [Video Presentation]()
+> [Video Presentation](https://www.loom.com/share/d7424068bc79412c95668bfed53a4abd)
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
