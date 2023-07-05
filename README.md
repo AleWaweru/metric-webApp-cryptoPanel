@@ -46,6 +46,7 @@
     <li><a href="#">JSX</a></li>
     <li><a href="#">CSS</a></li>
     <li><a href="#">JavaScript</a></li>
+    <li><a href="#">API</a></li>
   </ul>
 </details>
 
