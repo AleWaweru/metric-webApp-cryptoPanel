@@ -21,10 +21,17 @@ const Home = () => {
     if (e.key === 'Enter') {
       e.preventDefault();
       if (!query) {
-        // Check if any field is empty
         dispatch(fetchCurrency());
         return;
       }
+      dispatch(searchCurrency(query)).then(() => {
+        setQuery('');
+      });
+    }
+  };
+
+  const handleSearchButtonClick = () => {
+    if (query) {
       dispatch(searchCurrency(query)).then(() => {
         setQuery('');
       });
@@ -38,6 +45,7 @@ const Home = () => {
         query={query}
         handleQuery={handleQuery}
         handleKeyDown={handleKeyDown}
+        handleSearchButtonClick={handleSearchButtonClick}
       />
     </div>
   );

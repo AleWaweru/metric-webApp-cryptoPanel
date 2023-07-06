@@ -51,7 +51,7 @@ thead th:first-child {
     font-size: 12px;
     display: block;
     overflow-x: auto;
-    padding: 5px;
+    padding: 7px;
   }
 
   thead {
@@ -88,7 +88,8 @@ thead th:first-child {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    border-bottom: 1px solid #ddd;
+
+    /* border-bottom: 1px solid #ddd; */
     padding-bottom: 10px;
   }
 
@@ -100,15 +101,23 @@ thead th:first-child {
     font-weight: bold;
   }
 
+
   /* Alternate row colors */
   tbody tr:nth-child(4n),
   tbody tr:nth-child(4n + 1) {
-    background-color: #e0dfdf;
+    background-color: rgb(226, 47, 107);
   }
 
   tbody tr:nth-child(4n + 2),
   tbody tr:nth-child(4n + 3) {
-    background-color: #ececec;
+    background-color: rgb(223, 107, 146);
+  }
+
+  th,
+  td {
+    padding-right: 1.5rem;
+    text-align: center;
+    border: none;
   }
 
   th:nth-child(1),
@@ -126,6 +135,6 @@ thead th:first-child {
 
   /* Hover effect for mobile view */
   tbody tr:hover {
-    background-color: #c9c9c9;
+    background-color: rgb(226, 47, 107);
   }
 }

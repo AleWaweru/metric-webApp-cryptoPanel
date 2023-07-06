@@ -3,28 +3,30 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 const API = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false&price_change_percentage=1h%2C24h%2C7d&locale=en';
 
 export const fetchCurrency = createAsyncThunk('currency/fetchCurrency', async () => {
-  if (!window.localStorage.getItem('cashe')) {
+  if (!window.localStorage.getItem('cache')) {
     const response = await fetch(API);
     const data = await response.json();
-    window.localStorage.setItem('cashe', JSON.stringify(data));
+    window.localStorage.setItem('cache', JSON.stringify(data));
     return data;
   }
 
-  return JSON.parse(window.localStorage.getItem('cashe'));
+  return JSON.parse(window.localStorage.getItem('cache'));
 });
 
-const searchAPI = 'https://api.coingecko.com/api/v3/search?query';
+const searchAPI = 'https://api.coingecko.com/api/v3/search?';
 
-export const searchCurrency = createAsyncThunk('currency/searchCurrency', async (searchQuery) => {
-  const response = await fetch(`${searchAPI}=${searchQuery}`);
-  const data = await response.json();
-  return data.coins;
-});
+export const searchCurrency = createAsyncThunk(
+  'currency/searchCurrency',
+  async (searchQuery) => {
+    const response = await fetch(`${searchAPI}query=${searchQuery}`);
+    const data = await response.json();
+    return data.coins; // Use the correct property to access the coin data (e.g., data.results)
+  },
+);
 
 const initialState = {
   Loading: false,
-  Currencies: JSON.parse(window.localStorage.getItem('cashe')) || [],
-  // Currencies: [],
+  Currencies: JSON.parse(window.localStorage.getItem('cache')) || [],
   error: null,
 };
 

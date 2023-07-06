@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import './SearchBar.css';
 
 const SearchBar = ({
-  value, onChange, onKeyDown, onSearchButtonClick,
+  value, onChange, onKeyDown, handleSearchButtonClick,
 }) => {
-  const handleButtonClick = () => {
-    onSearchButtonClick(value);
+  const handleButtonClick = (e) => {
+    handleSearchButtonClick(e.target.value);
   };
 
   return (
@@ -29,7 +29,7 @@ SearchBar.propTypes = {
   value: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
   onKeyDown: PropTypes.func.isRequired,
-  onSearchButtonClick: PropTypes.func.isRequired,
+  handleSearchButtonClick: PropTypes.func.isRequired,
 };
 
 export default SearchBar;

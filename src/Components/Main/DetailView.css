@@ -55,6 +55,10 @@
   .details-view ul {
     width: 95%;
     align-items: center;
+    margin: 0;
+    padding: 0;
+    border-radius: 15px;
+    background-color: rgb(226, 47, 107);
   }
 
   .details-view li {
@@ -69,5 +73,9 @@
 
   .details-view span.value {
     width: 35%;
+  }
+
+  .details-view li:nth-child(even) {
+    background-color: rgb(223, 107, 146);
   }
 }

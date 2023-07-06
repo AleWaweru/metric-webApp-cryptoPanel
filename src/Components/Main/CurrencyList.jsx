@@ -6,7 +6,7 @@ import SearchBar from './SearchBar';
 import './CurrentList.css';
 
 const CurrencyList = ({
-  currencies, query, handleQuery, handleKeyDown,
+  currencies, query, handleQuery, handleKeyDown, handleSearchButtonClick,
 }) => {
   const navigate = useNavigate();
 
@@ -20,6 +20,7 @@ const CurrencyList = ({
         value={query}
         onChange={handleQuery}
         onKeyDown={handleKeyDown}
+        handleSearchButtonClick={handleSearchButtonClick}
       />
 
       <div className="table-container">
@@ -96,6 +97,7 @@ CurrencyList.propTypes = {
   query: PropTypes.string.isRequired,
   handleQuery: PropTypes.func.isRequired,
   handleKeyDown: PropTypes.func.isRequired,
+  handleSearchButtonClick: PropTypes.func.isRequired,
 };
 
 export default CurrencyList;

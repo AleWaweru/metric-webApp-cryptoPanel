@@ -7,3 +7,10 @@
 body {
   width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+  body {
+    width: 100%;
+    background-color: rgb(226, 47, 107);
+  }
+}

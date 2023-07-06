@@ -41,6 +41,7 @@
 @media screen and (max-width: 768px) {
   .navbar {
     justify-content: center;
+    background-color: rgb(226, 47, 107);
   }
 
   .navbar-title {
