@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CurrencyList renders the component correctly 1`] = `
+<div>
+  <div
+    class="search-bar"
+  >
+    <input
+      placeholder="Search"
+      type="text"
+      value=""
+    />
+    <button
+      type="button"
+    >
+      Search
+    </button>
+  </div>
+  <div
+    class="table-container"
+  >
+    <table>
+      <thead>
+        <tr>
+          <th>
+            Rank
+          </th>
+          <th>
+            Name
+          </th>
+          <th>
+            Symbol
+          </th>
+          <th>
+            Current Price
+          </th>
+          <th>
+            24h Change
+          </th>
+          <th>
+            Total Volume
+          </th>
+          <th>
+            Market Cap
+          </th>
+        </tr>
+      </thead>
+      <tbody />
+    </table>
+  </div>
+</div>
+`;
