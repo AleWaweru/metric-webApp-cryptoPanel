@@ -101,7 +101,6 @@ thead th:first-child {
     font-weight: bold;
   }
 
-
   /* Alternate row colors */
   tbody tr:nth-child(4n),
   tbody tr:nth-child(4n + 1) {
